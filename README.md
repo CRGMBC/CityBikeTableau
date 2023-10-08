@@ -26,4 +26,6 @@ Its interesting to note that majority of the rides ended back in Jersey citiy - 
 ![image](https://github.com/CRGMBC/CityBikeTableau/assets/134125287/0ed53c11-40b1-450a-b87c-f393fe03ad7a)
 
 
+Please find access to the story :
+https://public.tableau.com/app/profile/caroline.grant/viz/CarolinesStory_16965759733900/Story1#2
 
