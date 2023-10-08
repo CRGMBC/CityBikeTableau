@@ -58,4 +58,5 @@ Create a Tableau story that brings together the visualisations, requested maps, 
 Ensure your presentation is professional, logical, and visually appealing.
 
 # Method
-Downloaded 12 months of JC citibike trip data (from Aug-22 to Jul-23)
+Downloaded 12 months of JC citibike trip data (from Aug-22 to Jul-23).  Using July 2023 data to create the vizualisations.
+Removed trips where the Ride ID did not end at a Station to ensure the vizualisations are taking into account valid start and end times.
