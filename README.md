@@ -8,55 +8,22 @@ Since 2013, the Citi Bike program has implemented a robust infrastructure for co
 
 However, while the data has been regularly updated, the team has yet to implement a dashboard or sophisticated reporting process. City officials have questions about the program, so your first task on the job is to build a set of data reports to provide the answers.
 
-# Instructions
-Your task in this assignment is to aggregate the data found in the Citi Bike Trip History Logs and find two unexpected phenomena.
-
-Design 2–5 visualisations for each discovered phenomenon (4–10 total). You may work with a timespan of your choosing. Optionally, you can also merge multiple datasets from different periods.
-
-**The following are questions you may wish to answer**. Do not limit yourself to these questions; they are suggestions for a starting point. Be creative!
-
-How many trips have been recorded in total during the chosen period?
-
-By what percentage has total ridership grown?
-
-How have the proportions of short-term customers and annual subscribers changed?
-
-What are the peak hours when bikes are used during the summer months?
-
-What are the peak hours when bikes are used during the winter months?
-
-Today, what are the top 10 stations in the city for starting a journey? Based on data, why do you hypothesise these are the top locations?
-
-Today, what are the top 10 stations in the city for ending a journey? Based on data, why?
-
-Today, what are the bottom 10 stations in the city for starting a journey? Based on data, why?
-
-Today, what are the bottom 10 stations in the city for ending a journey? Based on data, why?
-
-How does the average trip duration change by the type of user? (This may be under "User Type" or "member_casual" depending on the period the data is from).
-
-What is the average distance in miles for a bike trip?
-
-Which bikes (by ID) are most likely due for repair or inspection in the timespan?
-
-How variable is the utilisation by bike ID?
-
-Use your visualisations (not necessarily all of them) to design a dashboard for each phenomenon. The dashboards should be accompanied by an analysis explaining why the phenomenon may be occurring.
-
-**Create one of the following visualisations for city officials**:
-
-**Basic**: A static map that plots all bike stations with a visual indication of the most popular locations to start and end a journey, with zip code data overlaid on top.
-
-**Advanced**: A dynamic map that shows how each station's popularity changes over time (by month and year). Again, with zip code data overlaid on the map.
-
-The map you choose should also be accompanied by a write-up describing any trends that were noticed during your analysis.
-
-**Create your final presentation**:
-
-Create a Tableau story that brings together the visualisations, requested maps, and dashboards.
-
-Ensure your presentation is professional, logical, and visually appealing.
-
-# Method
+# Method & Result
 Downloaded 12 months of JC citibike trip data (from Aug-22 to Jul-23).  Using July 2023 data to create the vizualisations.
 Removed trips where the Ride ID did not end at a Station to ensure the vizualisations are taking into account valid start and end times.
+![image](https://github.com/CRGMBC/CityBikeTableau/assets/134125287/23ea8d4f-d8c7-42b7-b732-2a2353298bf8)
+
+
+Compared the Member rider vs Casual rider numbers per calendar day of July 23 (based on the start date)
+Compared the Member rider vs Casual rider numbers per day of the week for the month on July 23 (based on start date) to see if there were variances to be used.  Noted that the Members were higher than non-members on all days of the week, but the casual riders were significantly higher on a Saturday & Sunday compared to a weekday.
+
+Compared the Member rider vs Casual rider average trip length in minutes per calendar day of July 23 (based on the start date)
+Compared the Member rider vs Casual rider average trip length in minutes per day of the week for the month on July 23 (based on the start date).  Members tend to take shorter rides than non-members.
+
+Mapped there stations where the rides started, where the rides ended on background overlay map with Zip codes.
+Mapped ending stations with the number of rides ending at a point as the colour & size marker.  This is on a background map where the median houshold income is displayed by colour to see if this shows an impact on the hiring.
+Its interesting to note that majority of the rides ended back in Jersey citiy - the size of the markers in New York City are the smallest.  As expected, transport hubs have a high return rate.
+![image](https://github.com/CRGMBC/CityBikeTableau/assets/134125287/0ed53c11-40b1-450a-b87c-f393fe03ad7a)
+
+
+
